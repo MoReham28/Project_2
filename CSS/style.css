@@ -1,0 +1,33 @@
+/* Start Variables */
+:root {
+    --primary-color: rgb(26, 188, 156) ;
+    --secondary-color: rgb(44, 62, 80);
+    --thertiary-color: rgb(255, 255, 255);
+    --quaternary-color: #1a252f;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+    
+}
+/* Medium */
+@media (min-width: 992px) {
+    
+}
+/* Large */
+@media (min-width: 1200px) {
+    
+}
+/* End Global Rules */
