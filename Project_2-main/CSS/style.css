@@ -1,0 +1,300 @@
+/* Start Variables */
+:root {
+    --primary-color: rgb(26, 188, 156) ;
+    --secondary-color: rgb(44, 62, 80);
+    --tertiary-color: rgb(255, 255, 255);
+    --quaternary-color: #1a252f;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+/* Small */
+@media (max-width: 768px) {
+    .modal-content{
+        width: 90%;
+        padding: 0 1rem !important;
+    }
+    .modal-content .modal-body img{
+        width: 100%;
+        max-width: 300px !important;
+    }
+    .modal-content .modal-body p{
+        padding:2.5rem 0 0 !important;
+    }
+}
+/* Medium */
+@media (max-width: 992px) {
+    .modal-content{
+        width: 90%;
+        padding: 0 2.5rem !important;
+    }
+    .modal-content .modal-body img{
+        width: 90%;
+        max-width: 500px !important;
+    }
+    .modal-content .modal-body p{
+        padding:2.5rem 0 0 !important;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    
+}
+@media (min-width: 992px) and (max-width: 1198px){
+    .modal-content{
+        width: 90%;
+        padding: 0 2.5rem !important;
+    }
+    .modal-content .modal-body img{
+        width: 90%;
+        max-width: 500px !important;
+    }
+    .modal-content .modal-body p{
+        padding:2.5rem 5rem 0 !important;
+    }
+}
+/* End Global Rules */
+/* Start Components */
+.special-heading, .special-heading-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0px;
+}
+.special-heading .star {
+    font-size: 35px;
+    color: var(--secondary-color);
+}
+.special-heading .line{
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    line-height: 1rem;
+    background-color: var(--secondary-color);
+}
+.special-heading-2 .star {
+    font-size: 35px;
+    color: var(--tertiary-color);
+}
+.special-heading-2 .line{
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    line-height: 1rem;
+    background-color: var(--tertiary-color);
+}
+/* End Components */
+/* Start Portfolio*/
+.portfolio{
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+.portfolio h2{
+    background-color: var(--tertiary-color);
+    font-size: 3rem;
+    line-height: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    display: inline-block;
+    padding-top: 100px;
+}
+.portfolio-content{
+    justify-content: center;
+    width: 100%;
+    padding-top: 25px;
+}
+.portfolio-content .cards{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.portfolio-content .cards img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+} 
+.portfolio-content .cards .image .over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 1.5rem);
+    margin-left: 1.5rem;
+    height: 100%;
+    border-radius: 0.5rem;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(26, 188, 156, 0.9);
+    transition: all 0.3s ease;
+}
+.portfolio-content .cards .image .plus{
+    color: var(--tertiary-color);
+    font-size: 4.6rem;
+}
+.portfolio-content .cards .image:hover .over{
+    opacity: 1;
+}
+.portfolio-content .info {
+    display: none;
+}
+.modal-content{
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+}
+.modal-content .modal-header{
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.modal-content .modal-header h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--quaternary-color);
+}
+.modal-content .modal-body{
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 10px;
+}
+.modal-content .modal-footer{
+    border-top: none;
+    justify-content: center;
+    padding: 15px 0 45px;
+}
+.modal-content .modal-header .btn-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+}
+.modal-content .modal-body img{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: auto;
+    margin-top: -25px;
+    border-radius: 0.5rem;
+}
+.modal-content .modal-body p{
+    padding: 35px 195px 0;
+    text-align: center;
+}
+.modal-content .modal-footer button{
+    background: var(--primary-color);
+    border: none;
+    color: var(--tertiary-color);
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin-top: -15px;
+}
+.modal-content .modal-footer button i{
+    color: var(--tertiary-color);
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.modal-content .modal-footer  button:hover{
+    background: var(--primary-color);
+}
+/* End Portfolio*/
+
+/*start footer*/
+.footer{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   text-align: center;
+   color: white;
+   padding: 70px 50px;
+}
+
+.footer h3{
+    font-weight: 800px;
+    margin-bottom: 20px;
+}
+.footer div p{
+    font-size: 22px;
+    line-height: 1.6;
+}
+.footer div .social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footer div .social-icons a{
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    font-size: 20px;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+    
+}
+.footer div .social-icons a:hover{
+    background-color: white;
+    color: black;
+}
+.footer div p a{
+    color: var(--primary-color);
+}
+.footer div p a:hover{
+    color: rgb(32, 146, 123);
+}
+@media (max-width: 767px) {
+    .footer{
+        text-align: center;
+        flex-direction: column;
+}
+.footer div p{
+    margin-bottom: 40px;
+}
+.footer div .social-icons{
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+}
+/*end footer*/
+/*start copyright section*/
+.copyright{
+    text-align: center;
+    background-color: var(--quaternary-color);
+    padding: 15px;
+    color: white;
+}
+/*end copyright section*/
