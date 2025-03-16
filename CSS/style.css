@@ -2,7 +2,7 @@
 :root {
     --primary-color: rgb(26, 188, 156) ;
     --secondary-color: rgb(44, 62, 80);
-    --thertiary-color: rgb(255, 255, 255);
+    --tertiary-color: rgb(255, 255, 255);
     --quaternary-color: #1a252f;
 }
 /* End Variables */
@@ -69,7 +69,7 @@ body {
 }
 /* End Global Rules */
 /* Start Components */
-.special-heading{
+.special-heading, .special-heading-2{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,6 +87,17 @@ body {
     line-height: 1rem;
     background-color: var(--secondary-color);
 }
+.special-heading-2 .star {
+    font-size: 35px;
+    color: var(--tertiary-color);
+}
+.special-heading-2 .line{
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    line-height: 1rem;
+    background-color: var(--tertiary-color);
+}
 /* End Components */
 /* Start Portfolio*/
 .portfolio{
@@ -95,13 +106,13 @@ body {
     position: relative;
 }
 .portfolio h2{
-    background-color: var(--thertiary-color);
+    background-color: var(--tertiary-color);
     font-size: 3rem;
     line-height: 2rem;
     font-weight: bold;
     color: var(--secondary-color);
     display: inline-block;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .portfolio-content{
     justify-content: center;
@@ -141,7 +152,7 @@ body {
     transition: all 0.3s ease;
 }
 .portfolio-content .cards .image .plus{
-    color: var(--thertiary-color);
+    color: var(--tertiary-color);
     font-size: 4.6rem;
 }
 .portfolio-content .cards .image:hover .over{
@@ -202,14 +213,14 @@ body {
 .modal-content .modal-footer button{
     background: var(--primary-color);
     border: none;
-    color: var(--thertiary-color);
+    color: var(--tertiary-color);
     padding: 0.7rem 1.5rem;
     font-size: 1rem;
     border-radius: 0.5rem;
     margin-top: -15px;
 }
 .modal-content .modal-footer button i{
-    color: var(--thertiary-color);
+    color: var(--tertiary-color);
     font-size: 1rem;
     font-weight: bold;
     padding-right: 5px;
