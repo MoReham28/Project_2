@@ -18,8 +18,6 @@ html{
 body {
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
-    padding-left: 50px;
-    padding-right: 50px;
     text-align: center;
 }
 /* Small */
@@ -104,6 +102,8 @@ body {
     text-align: center;
     padding: 50px 20px;
     position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .portfolio h2{
     background-color: var(--tertiary-color);
@@ -229,3 +229,71 @@ body {
     background: var(--primary-color);
 }
 /* End Portfolio*/
+/*start footer*/
+.footer{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    color: var(--tertiary-color);
+    padding: 70px 50px;
+}
+
+.footer h3{
+    font-weight: 800px;
+    margin-bottom: 20px;
+}
+.footer div p{
+    font-size: 22px;
+    line-height: 1.6;
+}
+.footer div .social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footer div .social-icons a{
+    display: inline-block;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 50%;
+    width: 50px;
+    font-size: 20px;
+    height: 50px;
+    color: var(--tertiary-color);
+    line-height: 50px;
+    
+}
+.footer div .social-icons a:hover{
+    background-color: var(--tertiary-color);
+    color: black;
+}
+.footer div p a{
+    color: var(--primary-color);
+}
+.footer div p a:hover{
+    color: rgb(32, 146, 123);
+}
+@media (max-width: 767px) {
+    .footer{
+        text-align: center;
+        flex-direction: column;
+}
+.footer div p{
+    margin-bottom: 40px;
+}
+.footer div .social-icons{
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+}
+/*end footer*/
+/*start copyright section*/
+.copyright{
+    text-align: center;
+    background-color: var(--quaternary-color);
+    padding: 15px;
+    color: var(--tertiary-color);
+}
+/*end copyright section*/
