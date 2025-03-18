@@ -18,6 +18,11 @@ html{
 body {
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
+<<<<<<< HEAD
+=======
+    padding-left: 50px;
+    padding-right: 50px;
+>>>>>>> portfolio
     text-align: center;
 }
 /* Small */
@@ -97,6 +102,7 @@ body {
     background-color: var(--tertiary-color);
 }
 /* End Components */
+<<<<<<< HEAD
 /*Srart Navbar*/
 .header {
     display: flex;
@@ -318,13 +324,18 @@ header p:hover {
     }
 }
 /*End Navbar*/
+=======
+>>>>>>> portfolio
 /* Start Portfolio*/
 .portfolio{
     text-align: center;
     padding: 50px 20px;
     position: relative;
+<<<<<<< HEAD
     padding-left: 50px;
     padding-right: 50px;
+=======
+>>>>>>> portfolio
 }
 .portfolio h2{
     background-color: var(--tertiary-color);
@@ -449,6 +460,7 @@ header p:hover {
 .modal-content .modal-footer  button:hover{
     background: var(--primary-color);
 }
+<<<<<<< HEAD
 /* End Portfolio*/
 /*start footer*/
 .footer{
@@ -518,3 +530,6 @@ header p:hover {
     color: var(--tertiary-color);
 }
 /*end copyright section*/
+=======
+/* End Portfolio*/
+>>>>>>> portfolio
