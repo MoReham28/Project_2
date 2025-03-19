@@ -19,6 +19,8 @@ body {
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
     text-align: center;
+    margin :0;
+  padding :0 ;
 }
 /* Small */
 @media (max-width: 768px) {
@@ -446,6 +448,71 @@ header p:hover {
     background: var(--primary-color);
 }
 /* End Portfolio*/
+/* start section */
+.container {
+padding-right :15px;
+padding-left: 15px;
+margin-left: auto;
+margin-right: auto; 
+}
+.special-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    margin-top: -20px;
+}
+.special-heading .star {
+    font-size: 35px;
+}
+.special-heading .line{
+    width: 125px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: white;
+}
+.about{
+  color: white;
+  background-color: #21b899;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+  width: 100%;
+}
+.about h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.about p{
+ padding: 10px;
+  font-size: 20px;
+  line-height: 1.6;
+ text-align: start;
+}
+/* start-download-btn */
+.download-btn{
+  display : flex ;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  font-size: 15px;
+  padding: 20px;
+  color: white ;
+  text-decoration: none;
+  border: 2px solid white ;
+  border-radius: 10px;
+  width: 180px;
+  margin: auto;
+  margin-bottom: 70px;
+  transition: all 0.3s ease-in-out;
+}
+.download-btn:hover{
+  background-color: white;
+  color: #303031;
+}
+/* end-section */
 /*start footer*/
 .footer{
     background-color: var(--secondary-color);
