@@ -190,7 +190,7 @@ body {
 }
 @media (max-width: 992px) {
     .header{
-        padding: 0 8px;
+        padding: 0;
     }
     .menu-btn {
         display: inline-block;
@@ -207,7 +207,7 @@ body {
         padding-right: 100px;
     }
     .nav-menu ul{
-        padding: 5px;
+        padding: 0;
     }
     .nav-menu ul li a {
         font-size: 18px;
