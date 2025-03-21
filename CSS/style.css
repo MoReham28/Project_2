@@ -20,7 +20,7 @@ body {
     font-weight: 400;
     text-align: center;
     margin :0;
-  padding :0 ;
+    padding :0 ;
 }
 /* Small */
 @media (max-width: 768px) {
@@ -49,10 +49,24 @@ body {
     .modal-content .modal-body p{
         padding:2.5rem 0 0 !important;
     }
+    .form-group{
+        padding: 0 30px !important;
+    }
 }
 /* Large */
-@media (min-width: 1200px) {
-    
+@media (min-width: 992px) and (max-width: 1300px){
+    .about-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding:10px 140px;
+    }
+    .about-container p {
+        margin: 0;
+    }
+    .form-group{
+        padding: 0 300px !important;
+    }
 }
 @media (min-width: 992px) and (max-width: 1198px){
     .modal-content{
@@ -65,6 +79,9 @@ body {
     }
     .modal-content .modal-body p{
         padding:2.5rem 5rem 0 !important;
+    }
+    .form-group{
+        padding: 0 200px !important;
     }
 }
 /* End Global Rules */
@@ -104,8 +121,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 20px 20px;
+    padding: 20px 15px;
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
     position: fixed;
@@ -117,9 +133,8 @@ body {
 }
 .logo {
     font-size: 25px;
-    font-weight: 700;
     margin: 0;
-    padding-left: 80px;
+    padding-left: 50px;
 }
 #menu-toggle {
     display: none;  
@@ -128,11 +143,11 @@ body {
 .menu-btn {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
-    border: 6px solid transparent ;
-    padding: 9px;
-    font-size: 20px;
+    border: 4px solid transparent ;
+    padding: 8px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 8px;
     display: none; 
     text-align: center;
 }
@@ -143,22 +158,22 @@ body {
 .nav-menu {
     display: none;
     position: absolute;
-    top: 120px;
-    left: 0;
+    top: 80px;
     width: 100%;
     background-color: var(--secondary-color);
-    padding: 20px;
+    padding: 5px 25px;
 }
 .nav-menu ul {
     list-style: none;
-    padding-right: 80px;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-right: -20px;
+    padding-left: 100px;
 }
 .nav-menu ul li {
-    margin: 10px 50px 50px;
+    margin: 10px 15px 50px;
 }
 .nav-menu ul li a {
     color: var(--tertiary-color);
@@ -174,6 +189,9 @@ body {
     display: flex;
 }
 @media (max-width: 992px) {
+    .header{
+        padding: 0 8px;
+    }
     .menu-btn {
         display: inline-block;
     }
@@ -185,12 +203,14 @@ body {
     }
     .logo {
         font-size: 25px;
-        padding-left: 0;
+        padding-left: 10px;
         padding-right: 100px;
+    }
+    .nav-menu ul{
+        padding: 5px;
     }
     .nav-menu ul li a {
         font-size: 18px;
-        padding-left: 85px;
     }
 }
 @media (min-width: 992px) {
@@ -201,27 +221,25 @@ body {
         display: flex;
         position: static;
         background: none;
-        padding: 0;
         width: auto;
     }
     .nav-menu ul {
         flex-direction: row;
-        justify-content: flex-start;
     }
     .nav-menu ul li {
-        margin: 0 15px;
+        margin: 0 10px;
     }
 }
 @media (min-width: 991px) and (max-width: 1100px) {
     .header {
         flex-wrap: nowrap; 
         justify-content: space-between; 
-        padding: 20px 40px; 
+        padding: 20px 20px; 
     }
     .logo {
-        font-size: 32px; 
-        padding-left: 50px; 
-        padding-right: 30px; 
+        font-size: 25px; 
+        padding-left: 30px; 
+        padding-right: 20px; 
     }
     .nav-menu {
         position: static; 
@@ -233,14 +251,13 @@ body {
     }
     .nav-menu ul {
         flex-direction: row; 
-        margin-left: 0;
     }
     .nav-menu ul li {
         margin: 0 20px; 
     }
     .nav-menu ul li a {
-        font-size: 22px; 
-        padding-left: 30px; 
+        font-size: 15px; 
+        padding-left: auto; 
     }
 }
 header {
@@ -448,34 +465,17 @@ header p:hover {
     background: var(--primary-color);
 }
 /* End Portfolio*/
-/* start section */
-.container {
-padding-right :15px;
-padding-left: 15px;
-margin-left: auto;
-margin-right: auto; 
-}
-.special-heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
-    margin-top: -20px;
-}
-.special-heading .star {
-    font-size: 35px;
-}
-.special-heading .line{
-    width: 125px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: white;
+/* Start Section */
+.about .container {
+   padding-right :15px;
+   padding-left: 15px;
+   margin-left: auto;
+   margin-right: auto; 
 }
 .about{
-  color: white;
-  background-color: #21b899;
-  padding-top: 40px;
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  padding-top: 50px;
   padding-bottom: 40px;
   margin-top: 30px;
   width: 100%;
@@ -486,12 +486,12 @@ margin-right: auto;
   font-weight: bold;
 }
 .about p{
- padding: 10px;
+  padding: 10px;
   font-size: 20px;
   line-height: 1.6;
- text-align: start;
+  text-align: start;
 }
-/* start-download-btn */
+/* Start Download Btn */
 .download-btn{
   display : flex ;
   justify-content: center;
@@ -499,9 +499,9 @@ margin-right: auto;
   align-items: center;
   font-size: 15px;
   padding: 20px;
-  color: white ;
+  color: var(--tertiary-color) ;
   text-decoration: none;
-  border: 2px solid white ;
+  border: 2px solid var(--tertiary-color) ;
   border-radius: 10px;
   width: 180px;
   margin: auto;
@@ -509,11 +509,83 @@ margin-right: auto;
   transition: all 0.3s ease-in-out;
 }
 .download-btn:hover{
-  background-color: white;
+  background-color: var(--tertiary-color);
   color: #303031;
 }
-/* end-section */
-/*start footer*/
+/* End Section */
+/*Start Contact*/
+.contact {
+    background-color: #fff;
+    padding-top: 50px;
+}
+.contact h2 {
+    text-align: center;
+    font-size: 45px;
+    color: var(--secondary-color);
+}  
+.form-group {
+    margin-bottom: 35px;
+    position: relative;
+    padding: 0 30px;
+    color: #ccc;
+}  
+input,
+textarea {
+    width: 100%;
+    padding: 24px 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    outline: none;
+    font-size:26px;
+    transition: all 0.3s ease;
+}
+textarea{
+    padding-bottom: 40px;
+    margin-top: -20px;
+}
+input:focus,
+textarea:focus {
+    border-bottom-color: var(--primary-color);
+    transform: translate(0,-20px);
+}
+input::placeholder,
+textarea::placeholder {
+    color: rgb(108, 117, 125);
+    font-size: 24px;
+    transition: all 0.3s ease;
+} 
+input:focus::placeholder,
+textarea:focus::placeholder {
+    padding: 0 10px;
+    font-size: 18px;
+}  
+.error {
+    color: #e74c3c;
+    font-size: 18px;
+    margin-top: 8px;
+    display: none;
+}
+input:invalid:focus + .error,
+textarea:invalid:focus + .error {
+    display: block;
+}
+.contact form .btn {
+    background-color: #1abc9c;
+    color: var(--tertiary-color);
+    margin-bottom: 100px;
+    margin-top: -20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    transition: all 0.3s ease;
+    padding: 21px 26px;
+} 
+.contact form .btn:hover {
+    background-color: var(--primary-color);
+}
+/*End Contact*/
+/*Start Footer*/
 .footer{
     background-color: var(--secondary-color);
     display: flex;
@@ -545,7 +617,6 @@ margin-right: auto;
     height: 50px;
     color: var(--tertiary-color);
     line-height: 50px;
-    
 }
 .footer div .social-icons a:hover{
     background-color: var(--tertiary-color);
@@ -561,22 +632,41 @@ margin-right: auto;
     .footer{
         text-align: center;
         flex-direction: column;
+    }
+    .footer div p{
+        margin-bottom: 40px;
+    }
+    .footer div h3{
+        margin-bottom: 25px;
+    }
+    .footer div .social-icons{
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
 }
-.footer div p{
-    margin-bottom: 40px;
-}
-.footer div .social-icons{
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-    font-size: 18px;
-}
+@media (max-width: 992px){
+    .footer{
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer div p{
+        margin-bottom: 40px;
+    }
+    .footer div h3{
+        margin-bottom: 25px;
+    }
+    .footer div .social-icons{
+        margin-bottom: 50px;
+        font-size: 18px;
+    }
 }
 /*end footer*/
-/*start copyright section*/
+/*Start Copyright Section*/
 .copyright{
     text-align: center;
     background-color: var(--quaternary-color);
     padding: 15px;
     color: var(--tertiary-color);
 }
-/*end copyright section*/
+/*End Copyright Section*/
