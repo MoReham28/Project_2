@@ -173,7 +173,7 @@ body {
     gap: 70px;
 }
 .nav-menu ul li {
-    margin: 30px 15px 10px;
+    margin: 60px 15px 40px;
 }
 .nav-menu ul li a {
     color: var(--tertiary-color);
@@ -291,7 +291,7 @@ header .container {
     align-items: center;
 }
 header img {
-    width: 230px;
+    width: 200px;
     padding-top: 100px;
     border-radius: 45%;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -303,7 +303,7 @@ header img:hover {
 header h1 {
     color: var(--tertiary-color);
     font-weight: 700;
-    font-size: 80px;
+    font-size: 70px;
     margin-top: 40px;
     transition: color 0.3s ease, letter-spacing 0.3s ease;
 }
