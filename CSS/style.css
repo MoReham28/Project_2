@@ -173,7 +173,7 @@ body {
     gap: 70px;
 }
 .nav-menu ul li {
-    margin: 10px 15px 50px;
+    margin: 10px 15px 10px;
 }
 .nav-menu ul li a {
     color: var(--tertiary-color);
@@ -239,7 +239,7 @@ body {
         flex-direction: row;
     }
     .nav-menu ul li {
-      padding-left: 5px;
+    padding-left: 5px;
     }
 }
 @media (min-width: 991px) and (max-width: 1100px) {
