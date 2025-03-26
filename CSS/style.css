@@ -202,7 +202,7 @@ body {
 @media (max-width: 332px) {
     .logo {
         font-size: 20px !important;
-        padding-left: 0.5rem;
+        padding-left: 10px;
     }
     .menu-btn {
         padding: 8px;
@@ -213,7 +213,7 @@ body {
 }
 @media (min-width: 332px) and (max-width: 768px){
     .logo{
-        padding-left: 0.5rem !important;
+        padding-left: 10px !important;
     }
 }
 /* الشاشات من 768px */
@@ -221,7 +221,7 @@ body {
     .logo {
         font-size: 20px !important;
         font-weight: bold;
-        margin-left: 8px;
+        margin-left: 10px;
     }
     .menu-btn {
         margin-right: 10px;
@@ -229,7 +229,7 @@ body {
 }
 @media (max-width: 768px) {
     .logo {
-        padding-left: 8px;  /* إلغاء الهامش من اليسار */
+        padding-left: 10px;  /* إلغاء الهامش من اليسار */
         font-size: 22px !important;
     }
     .nav-menu ul {
@@ -300,7 +300,7 @@ body {
         padding-left: 5px;
     }
     .logo {
-        padding-left: 5px;
+        padding-left: 10px;
         font-size: 25px;
     }
 }
