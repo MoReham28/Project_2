@@ -23,6 +23,13 @@ body {
 }
 /* Small */
 @media (max-width: 768px) {
+    .portfolio-content .cards img{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .portfolio{
+        padding: 0.5rem !important;
+    }
     .modal-content{
         width: 90%;
         padding: 0 1rem !important;
@@ -335,9 +342,9 @@ header .container {
     align-items: center;
 }
 header img {
-    width: 150px;
+    width: 200px;
     padding-top: 150px;
-    border-radius: 50%;
+    border-radius: 45%;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 header img:hover {
@@ -371,7 +378,7 @@ header p:hover {
         font-size: 50px;
     }
     header img {
-        width: 150px;
+        width: 200px;
         padding-top: 60px;
     }
     header p {
@@ -391,10 +398,8 @@ header p:hover {
 /* Start Portfolio*/
 .portfolio{
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px;
     position: relative;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 .portfolio h2{
     background-color: var(--tertiary-color);
@@ -584,7 +589,6 @@ form {
 .form-group {
     margin-bottom: 35px;
     position: relative;
-    padding: 0 30px;
     color: #ccc;
 }  
 input,
