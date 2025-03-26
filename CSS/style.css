@@ -403,7 +403,7 @@ header p:hover {
 }
 .portfolio h2{
     background-color: var(--tertiary-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 2rem;
     font-weight: bold;
     color: var(--secondary-color);
@@ -584,7 +584,7 @@ form {
 }
 .contact h2 {
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
     color: var(--secondary-color);
 }  
 .form-group {
