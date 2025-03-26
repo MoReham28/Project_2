@@ -154,7 +154,7 @@ body {
     color: var(--tertiary-color);
     border: 3px solid transparent;
     border-color: rgb(14, 164, 134);
-    padding: 16px;
+    padding: 10px;
     font-size: 16px;
     margin-right: 0.5rem;
     cursor: pointer;
