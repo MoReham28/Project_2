@@ -141,7 +141,7 @@ body {
     z-index: 1000;
 }
 .logo {
-    font-size: 35px;
+    font-size: 45px;
     margin: 0;
     padding-left: 50px;
 }
@@ -152,8 +152,9 @@ body {
 .menu-btn {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
-    border: 4px solid transparent;
-    padding: 8px;
+    border: 3px solid transparent;
+    border-color: rgb(14, 164, 134);
+    padding: 16px;
     font-size: 16px;
     margin-right: 0.5rem;
     cursor: pointer;
@@ -208,7 +209,7 @@ body {
         padding: 8px;
     }
     .nav-menu{
-        height: 195px;
+        height: 200px;
     }
 }
 @media (min-width: 332px) and (max-width: 768px){
@@ -233,7 +234,7 @@ body {
         font-size: 22px !important;
     }
     .nav-menu ul {
-        padding-left: 0;   /* إزالة المسافة من اليسار */
+        padding-left: 0 !important;   /* إزالة المسافة من اليسار */
         padding-right: 0;  /* إزالة المسافة من اليمين لو احتجت */
     }
     .nav-menu ul li a {
@@ -245,7 +246,7 @@ body {
     }
     .nav-menu {
         padding-left: 5px;
-        height: 195px;
+        height: 200px;
     }
 }
 /* الشاشات المتوسطة حتى 992px */
@@ -264,10 +265,10 @@ body {
     }
     .nav-menu {
         padding-left: 10px;
-        height: 195px;
+        height: 200px;
     }
     .nav-menu ul {
-        padding: 0;
+        padding-left: 80px;
     }
     .nav-menu ul li {
         margin: 0 10px;
@@ -381,7 +382,7 @@ header p:hover {
         padding-top: 60px;
     }
     header p {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 @keyframes fadeIn {
@@ -473,9 +474,9 @@ header p:hover {
     padding: 20px;
 }
 .modal-content .modal-header h2{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: bold;
-    color: var(--quaternary-color);
+    color: var(--secondary-color);
 }
 .modal-content .modal-body{
     font-size: 16px;
@@ -564,7 +565,8 @@ header p:hover {
     border-radius: 10px;
     width: 220px;
     margin: auto;
-    margin-bottom: 70px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     transition: all 0.3s ease-in-out;
 }
 .download-btn:hover{
@@ -577,7 +579,7 @@ form {
     padding: 0 50px;
 }
 .contact {
-    background-color: #fff;
+    background-color: var(--tertiary-color);
     padding-top: 50px;
 }
 .contact h2 {
@@ -586,14 +588,14 @@ form {
     color: var(--secondary-color);
 }  
 .form-group {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     position: relative;
     color: #ccc;
 }  
 input,
 textarea {
     width: 100%;
-    padding: 24px 0px;
+    padding: 20px 0px;
     border: none;
     border-bottom: 1px solid #ccc;
     background: transparent;
@@ -602,8 +604,8 @@ textarea {
     transition: all 0.3s ease;
 }
 textarea{
-    padding-bottom: 40px;
-    margin-top: -20px;
+    padding-bottom: 30px;
+    margin-top: -30px;
 }
 input:focus,
 textarea:focus {
