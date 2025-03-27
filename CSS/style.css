@@ -197,10 +197,10 @@ body {
 .nav-menu {
     display: none;
     position: absolute;
-    top: 90px;
+    top: 75px;
     width: 100%;
     background-color: var(--secondary-color);
-    padding: 5px 25px;
+    padding: 8px 25px;
 }
 .nav-menu ul {
     list-style: none;
@@ -340,13 +340,14 @@ body {
     }
     .logo {
         font-size: 25px !important;
-        padding-left: 10px;
+        padding-left: 20px;
     }
     .nav-menu {
         justify-content: flex-start;
     }
     .nav-menu ul li a {
         font-size: 15px;
+        margin-right: 25px;
     }
 }
 header {
@@ -661,7 +662,8 @@ textarea:invalid:focus + .error {
     display: block;
 }
 .contact form .btn {
-    background-color: #1abc9c;
+    background-color: var(--primary-color);
+    opacity: 0.65;
     color: var(--tertiary-color);
     margin-bottom: 100px;
     margin-top: -20px;
@@ -669,7 +671,7 @@ textarea:invalid:focus + .error {
     border-radius: 8px;
     font-size: 22px;
     transition: all 0.3s ease;
-    padding: 21px 26px;
+    padding: 18px 30px;
 } 
 .contact form .btn:hover {
     background-color: var(--primary-color);
