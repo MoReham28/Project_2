@@ -585,7 +585,7 @@ header p:hover {
     justify-content: center;
     gap: 8px;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
     padding: 24px;
     color: var(--tertiary-color) ;
     text-decoration: none;
