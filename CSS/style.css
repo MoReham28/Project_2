@@ -23,6 +23,9 @@ body {
 }
 /* Small */
 @media (max-width: 768px) {
+    .portfolio h2{
+        font-size: 2.5rem !important; 
+    }
     .portfolio-content .cards img{
         margin-left: 5px;
         margin-right: 5px;
@@ -41,12 +44,27 @@ body {
     .modal-content .modal-body p{
         padding:2.5rem 0 0 !important;
     }
+    .about h2{
+        font-size: 40px !important;
+    }
     form{
         padding: 0 20px !important;
+    }
+    .contact h2{
+        font-size: 40px !important;
     }
 }
 /* Medium */
 @media (max-width: 992px) {
+    .portfolio h2{
+        font-size: 2.5rem !important; 
+    }
+    .about h2{
+        font-size: 40px !important;
+    }
+    .contact h2{
+        font-size: 40px !important;
+    }
     .modal-content{
         width: 90%;
         padding: 0 2.5rem !important;
@@ -64,6 +82,15 @@ body {
 }
 /* Large */
 @media (min-width: 992px) and (max-width: 1300px){
+    .portfolio h2{
+        font-size: 2.5rem !important; 
+    }
+    .about h2{
+        font-size: 40px !important;
+    }
+    .contact h2{
+        font-size: 40px !important;
+    }
     .about-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -100,7 +127,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 20px 0px;
+    padding: 15px 0px;
 }
 .special-heading .star {
     font-size: 35px;
@@ -130,18 +157,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 30px;
+    padding: 24px;
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
     position: fixed;
     top: 0;
     left: 0;
-    height: 90px;
+    height: 75px;
     width: 100%;
     z-index: 1000;
 }
 .logo {
-    font-size: 45px;
+    font-size: 150px;
     margin: 0;
     padding-left: 50px;
 }
@@ -154,7 +181,7 @@ body {
     color: var(--tertiary-color);
     border: 3px solid transparent;
     border-color: rgb(14, 164, 134);
-    padding: 10px;
+    padding: 8px 14px;
     font-size: 16px;
     margin-right: 0.5rem;
     cursor: pointer;
@@ -307,12 +334,12 @@ body {
     }
 }
 /* ضبط إضافي للعرض بين 992px و 1100px */
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) and (max-width: 1300px) {
     .header {
         padding: 20px 10px;
     }
     .logo {
-        font-size: 25px;
+        font-size: 25px !important;
         padding-left: 10px;
     }
     .nav-menu {
@@ -403,7 +430,7 @@ header p:hover {
 }
 .portfolio h2{
     background-color: var(--tertiary-color);
-    font-size: 2.5rem;
+    font-size: 3rem !important;
     line-height: 2rem;
     font-weight: bold;
     color: var(--secondary-color);
@@ -542,7 +569,7 @@ header p:hover {
 }
 .about h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 48px !important;
     font-weight: bold;
 }
 .about p{
@@ -584,7 +611,7 @@ form {
 }
 .contact h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 48px !important;
     color: var(--secondary-color);
 }  
 .form-group {
